@@ -2,7 +2,7 @@
 #
 #Author: ABHISHEK KISHOR SINGH
 #Created Date:28/02/2023
-#Last Modified Date:10/06/2023
+#Last Modified Date:28/01/2024
 #
 #Description: It is a interactive tool-kit hold some manual tasks automated via BASH scripts.
 #
@@ -22,7 +22,7 @@ PS3="
 [+] Select the appropiate option to execute action:"
 
 select var1 in "Folder Organizer" "Curf Remover" "Password Generator" "User Creator" "Indexer" "CSV Calculator" "Service Validator" "Online Image Extractor" "TarBall Mailer" "Term/Phase Fetcher";
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 do
 case "$var1" in 
 	"Folder Organizer")
@@ -101,7 +101,7 @@ while read var2; do
 done < <(ls "$organizerPath")
 
 echo "Please visit your home directory for MyShebangs folder for organized folders and list of special files";;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"Curf Remover")
 	read -p "This script will help you free up space in a given folder by removing any files that haven't been modified in the past 15 days. You can use the built-in functionality to retain files that you consider important. Please provide the absolute path to the folder you want to clean up, e.g. /home/user/Dump, where "Dump" is the name of the folder you want to clean up, located in your home directory. 
 
@@ -123,7 +123,7 @@ echo "Please visit your home directory for MyShebangs folder for organized folde
 	else
     	echo "Not a valid path"
 	fi;;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"Password Generator")
 	# Set the length of the password
 	read -n 5 -p "Set the length of the password: " length
@@ -146,7 +146,7 @@ echo "Please visit your home directory for MyShebangs folder for organized folde
 
 	# Display the password to the user
 	echo "Your new password is: $password";;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"User Creator")
 	# Prompt the user for the username to create
 	echo "Enter the username to create: "
@@ -160,7 +160,7 @@ echo "Please visit your home directory for MyShebangs folder for organized folde
 
 	# Print a message indicating the account creation is complete
 	echo "User account created: $username";;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"Indexer")
 	# Set the name of the directory containing the files to rename
 	directory="myfiles"
@@ -177,7 +177,7 @@ echo "Please visit your home directory for MyShebangs folder for organized folde
     	mv -- "$file" "$(printf 'file%03d.txt' $i)"
     	i=$((i+1))
 	done;;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"CSV Calculator")
 	# Set the name of the CSV file to parse
 	csv_file="data.csv"
@@ -195,7 +195,7 @@ echo "Please visit your home directory for MyShebangs folder for organized folde
     	echo "Average: $avg"
     	echo ""
 	done < "$csv_file";;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"Service Validator")
 	# Set the name of the service to check and restart
 	service_name="myservice"
@@ -209,7 +209,7 @@ echo "Please visit your home directory for MyShebangs folder for organized folde
     	echo "$service_name is not running, restarting..."
     	systemctl start "$service_name"
 	fi;;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"Online Image Extractor")
 # Set the website URL to download images from
 website_url="https://example.com"
@@ -225,7 +225,7 @@ wget -nd -r -P "$image_directory" -A jpg,jpeg,png,gif "$website_url"
 
 # Print a message indicating the download is complete
 echo "Image download complete: $image_directory";;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"TarBall Mailer" )
 # Set the source directory to backup
 source_directory="/path/to/source/directory"
@@ -255,7 +255,7 @@ email_address_cache=$email_address
 
 echo "Tar archive created successfully. Sending email notification."
         echo "Subject: Backup/Tar archive." | mail -s "Log file error notification" "$email_address_cache";;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 	"Term/Phase Fetcher")
 # Prompt the user for the word or phrase to search for
 echo "Enter the word or phrase to search for: "
@@ -267,6 +267,6 @@ read directory
 
 # Search for the word or phrase in the specified directory and its subdirectories
 grep -r "$search_term" "$directory";;
---------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 break
 done
