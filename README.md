@@ -1,7 +1,7 @@
 # BASH-Toolkit: A Multi-Tool Utility Script
 
 This is an interactive, menu-driven BASH script that consolidates 13+ common IT support and system administration tasks into a single, user-friendly utility.
-
+It is also available in form of a python script.
 This project was built with a focus on professional development practices, including robust error handling, input validation, dependency checking, and a clean, color-coded user interface.
 
 ---
@@ -25,7 +25,7 @@ This toolkit includes:
 
 ---
 
-### 🚀 How to Use
+### 🚀 How to Use in BASH Shell
 
 1.  **Clone the repository (or download the script):**
     ```bash
@@ -39,5 +39,21 @@ This toolkit includes:
 3.  **Run the script:**
     ```bash
     ./toolkit.sh
+    ```
+
+### 🚀 How to Use in Python Shell
+
+1.  **Clone the repository (or download the script):**
+    ```bash
+    git clone [https://github.com/0-xeno-0/BASH-Toolkit.git](https://github.com/0-xeno-0/BASH-Toolkit.git)
+    cd BASH-Toolkit
+    ```
+2.  **Make the script executable (one time only):**
+    ```bash
+    chmod +x toolkit.py
+    ```
+3.  **Run the script:**
+    ```bash
+    python3 toolkit.py
     ```
     *Note: Some features (like "User Creator" and "Service Manager") require `sudo` privileges to run. Launch the script with `sudo ./toolkit.sh` to use them.*
