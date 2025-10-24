@@ -34,10 +34,10 @@ This toolkit includes:
     ```
 2.  **Make the script executable (one time only):**
     ```bash
-    chmod +x toolkit_v2.sh
+    chmod +x toolkit.sh
     ```
 3.  **Run the script:**
     ```bash
-    ./toolkit_v2.sh
+    ./toolkit.sh
     ```
-    *Note: Some features (like "User Creator" and "Service Manager") require `sudo` privileges to run. Launch the script with `sudo ./toolkit_v2.sh` to use them.*
+    *Note: Some features (like "User Creator" and "Service Manager") require `sudo` privileges to run. Launch the script with `sudo ./toolkit.sh` to use them.*
