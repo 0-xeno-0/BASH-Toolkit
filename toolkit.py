@@ -7,8 +7,8 @@
 # A menu-driven Python toolkit for automating common manual tasks.
 #
 # Usage:
-# python3 toolkit.py
-# (or chmod +x toolkit.py && ./toolkit.py)
+# Run this script to access all 13 tools from one convenient, menu-driven
+# interface, eliminating the need to execute separate commands.
 
 import os
 import sys
