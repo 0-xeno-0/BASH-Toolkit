@@ -1,7 +1,7 @@
 # BASH-Toolkit: A Multi-Tool Utility Script
 
 This is an interactive, menu-driven BASH script that consolidates 13+ common IT support and system administration tasks into a single, user-friendly utility.
-It is also available in form of a python script.
+It is also available in form of a python script for GNU-Linux native systems.
 This project was built with a focus on professional development practices, including robust error handling, input validation, dependency checking, and a clean, color-coded user interface.
 
 ---
